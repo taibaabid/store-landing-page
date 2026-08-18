@@ -3,106 +3,387 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AURELIA | Contemporary Minimalist Womenswear</title>
+  <meta name="description" content="XIV COLLECTIONS — Minimalist contemporary atelier delivering tailored shirting, fluid silk draping, and elevated wardrobe essentials.">
+  <title>XIV COLLECTIONS | Official Store</title>
   <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
 
-  <!-- Header & Navigation -->
-  <header>
-    <a href="#home" class="brand-logo">AURELIA</a>
-    <nav aria-label="Main Navigation">
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#shop">Collection</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Newsletter</a></li>
-      </ul>
-    </nav>
+  <!-- 1. Header & Navigation -->
+  <header class="site-header">
+    <div class="header-left">
+      <a href="#home" class="brand-logo">XIV COLLECTIONS</a>
+      <nav aria-label="Main Navigation" class="main-nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#new-drop">New Drops</a></li>
+          <li><a href="#catalog">Collection</a></li>
+          <li><a href="#sizing">Size Guide</a></li>
+          <li><a href="#ethos">About</a></li>
+          <li><a href="#newsletter">Join</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Header Actions -->
+    <div class="header-right">
+      <button type="button" class="action-btn" aria-label="Search">🔍</button>
+      <button type="button" class="action-btn" aria-label="Wishlist">♡</button>
+      <a href="#catalog" class="cart-pill">
+        <span>Cart</span>
+        <span class="cart-count">0</span>
+      </a>
+    </div>
   </header>
 
   <main>
-    <!-- Hero Section -->
-    <section id="home">
-      <h1>Modern Elegance, Refined Daily.</h1>
-      <p>Discover our curated capsule of tailored shirting, fluid silk draping, and elevated formal silhouettes designed for effortless sophistication.</p>
-      <a href="#shop">Explore New Arrivals</a>
-    </section>
-
-    <!-- Product Grid Section -->
-    <section id="shop">
-      <h2>The Autumn Capsule</h2>
-      <p class="section-subtitle">Tailored essentials crafted with natural cotton, fluid silks, and bespoke crepe.</p>
-      
-      <div class="product-grid">
+    <!-- 2. Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="hero-content">
+        <span class="hero-tag">Autumn / Winter Capsule 2026</span>
+        <h1>Modern Elegance, Refined Daily</h1>
+        <p>Architectural silhouettes tailored from premium European poplins, raw Mulberry silks, and structured fluid blends designed for effortless distinction.</p>
         
-        <!-- Product 1: product-1.jpg -->
-        <article>
-          <img src="assets/images/product-1.jpg" alt="Wine red draped asymmetrical blouse paired with wide-leg beige trousers and matching clutch">
-          <div class="card-body">
-            <h3>Bordeaux Draped Silk Blouse</h3>
-            <p>Fluid Mulberry Silk with structured cowl neckline</p>
-            <span class="price">$74.00</span>
-            <button type="button">Add to Cart</button>
-          </div>
-        </article>
+        <div class="hero-cta-group">
+          <a href="#new-drop" class="btn btn-primary">Explore New Drops ↓</a>
+          <a href="#catalog" class="btn btn-outline">Full 12-Piece Capsule</a>
+        </div>
+      </div>
 
-        <!-- Product 2: product-2.jpg -->
-        <article>
-          <img src="assets/images/product-2.jpg" alt="Classic button-up blue shirt tucked into wide-leg black trousers">
-          <div class="card-body">
-            <h3>Parisian Blue Studio Set</h3>
-            <p>Tailored cotton shirt paired with relaxed wide-leg trousers</p>
-            <span class="price">$88.00</span>
-            <button type="button">Add to Cart</button>
-          </div>
-        </article>
-
-        <!-- Product 3: product-3.jpg -->
-        <article>
-          <img src="assets/images/product-3.jpg" alt="Mocha brown neck-tie silk blouse paired with pleated cream trousers">
-          <div class="card-body">
-            <h3>Mocha Tie-Neck Satin Blouse</h3>
-            <p>Soft-touch matte satin with adjustable tie accent</p>
-            <span class="price">$66.00</span>
-            <button type="button">Add to Cart</button>
-          </div>
-        </article>
-
-        <!-- Product 4: product-4.jpg -->
-        <article>
-          <img src="assets/images/product-4.jpg" alt="Tailored dusty rose button-up shirt paired with pleated high-waisted beige trousers">
-          <div class="card-body">
-            <h3>Dusty Rose Poplin Shirt</h3>
-            <p>100% Cotton Poplin with structured collar</p>
-            <span class="price">$58.00</span>
-            <button type="button">Add to Cart</button>
-          </div>
-        </article>
-
+      <div class="hero-showcase">
+        <figure class="hero-card">
+          <img src="assets/images/product-1.jpg" alt="Bordeaux draped silk blouse paired with pleated high-waisted beige trousers">
+          <figcaption>Look 01 — The Bordeaux Draped Set</figcaption>
+        </figure>
+        <figure class="hero-card">
+          <img src="assets/images/product-2.jpg" alt="Parisian blue tailored button-up styled with relaxed black trousers">
+          <figcaption>Look 02 — The Parisian Blue Studio Set</figcaption>
+        </figure>
       </div>
     </section>
 
-    <!-- Newsletter Section -->
-    <section id="contact">
-      <h2>Join the Aurelia Circle</h2>
-      <p>Receive private collection previews, seasonal styling edits, and priority access to limited drops.</p>
-      <form action="#" method="post">
-        <label for="email" class="sr-only">Email Address</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email" required>
-        <button type="submit">Subscribe</button>
+    <!-- 3. New Arrivals (Quick Highlight) -->
+    <section id="new-drop" class="container">
+      <div class="section-head">
+        <span class="badge">Curated Weekly Drop</span>
+        <h2>New Arrivals</h2>
+        <p class="section-desc">Limited edition studio pieces available for immediate allocation.</p>
+      </div>
+
+      <div class="product-grid-4">
+        <!-- Item 1 -->
+        <article class="card">
+          <figure class="card-media">
+            <img src="assets/images/product-1.jpg" alt="Wine red draped asymmetrical blouse paired with wide-leg beige trousers">
+            <span class="card-badge">Best Seller</span>
+          </figure>
+          <div class="card-details">
+            <span class="fabric-tag">Mulberry Silk</span>
+            <h3>Bordeaux Draped Silk Blouse</h3>
+            <span class="price">$74.00</span>
+            <button type="button" class="btn-card">Add to Cart</button>
+          </div>
+        </article>
+
+        <!-- Item 2 -->
+        <article class="card">
+          <figure class="card-media">
+            <img src="assets/images/product-2.jpg" alt="Classic button-up blue shirt tucked into wide-leg black trousers">
+            <span class="card-badge">New</span>
+          </figure>
+          <div class="card-details">
+            <span class="fabric-tag">Tailored Cotton</span>
+            <h3>Parisian Blue Studio Set</h3>
+            <span class="price">$88.00</span>
+            <button type="button" class="btn-card">Add to Cart</button>
+          </div>
+        </article>
+
+        <!-- Item 3 -->
+        <article class="card">
+          <figure class="card-media">
+            <img src="assets/images/product-3.jpg" alt="Mocha brown neck-tie silk blouse paired with pleated cream trousers">
+          </figure>
+          <div class="card-details">
+            <span class="fabric-tag">Matte Satin</span>
+            <h3>Mocha Tie-Neck Satin Blouse</h3>
+            <span class="price">$66.00</span>
+            <button type="button" class="btn-card">Add to Cart</button>
+          </div>
+        </article>
+
+        <!-- Item 4 -->
+        <article class="card">
+          <figure class="card-media">
+            <img src="assets/images/product-4.jpg" alt="Tailored dusty rose button-up shirt paired with pleated high-waisted beige trousers">
+          </figure>
+          <div class="card-details">
+            <span class="fabric-tag">Cotton Poplin</span>
+            <h3>Dusty Rose Poplin Shirt</h3>
+            <span class="price">$58.00</span>
+            <button type="button" class="btn-card">Add to Cart</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 4. Full 12-Piece Autumn Capsule Catalog -->
+    <section id="catalog" class="container bg-light-section">
+      <div class="section-head">
+        <span class="badge">Full Collection</span>
+        <h2>The Complete Autumn Capsule</h2>
+        <p class="section-desc">Every piece designed to interlock seamlessly for a modular, capsule wardrobe.</p>
+      </div>
+
+      <div class="product-grid-4">
+        <!-- Product 5 -->
+        <article class="card">
+          <figure class="card-media">
+            <img src="assets/images/product-5.jpg" alt="Champagne silk blouse tucked into black fluid wide trousers">
+          </figure>
+          <div class="card-details">
+            <span class="fabric-tag">Crepe Blend</span>
+            <h3>Champagne Crepe Shirt</h3>
+            <span class="price">$62.00</span>
+            <button type="button" class="btn-card">Add to Cart</button>
+          </div>
+        </article>
+
+        <!-- Product 6 -->
+        <article class="card">
+          <figure class="card-media">
+            <img src="assets/images/product-6.jpg" alt="Open collar black ribbed top paired with pleated beige trousers">
+          </figure>
+          <div class="card-details">
+            <span class="fabric-tag">Fine Gauge Knit</span>
+            <h3>Noir Ribbed Open Collar Top</h3>
+            <span class="price">$52.00</span>
+            <button type="button" class="btn-card">Add to Cart</button>
+          </div>
+        </article>
+
+        <!-- Product 7 -->
+        <article class="card">
+          <figure class="card-media">
+            <img src="assets/images/product-7.jpg" alt="Sky blue shirt styled with ivory drape knit over shoulders">
+          </figure>
+          <div class="card-details">
+            <span class="fabric-tag">Oxford Poplin</span>
+            <h3>Coastal Blue Layered Shirt</h3>
+            <span class="price">$84.00</span>
+            <button type="button" class="btn-card">Add to Cart</button>
+          </div>
+        </article>
+
+        <!-- Product 8 -->
+        <article class="card">
+          <figure class="card-media">
+            <img src="assets/images/product-8.jpg" alt="Blush pink blouse layered under tailored cream knit vest">
+          </figure>
+          <div class="card-details">
+            <span class="fabric-tag">Chiffon & Knit</span>
+            <h3>Layered Rose & Vest Duo</h3>
+            <span class="price">$79.00</span>
+            <button type="button" class="btn-card">Add to Cart</button>
+          </div>
+        </article>
+
+        <!-- Product 9 -->
+        <article class="card">
+          <figure class="card-media">
+            <img src="assets/images/product-9.jpg" alt="Sage green buttoned blouse tucked into camel pleated trousers">
+          </figure>
+          <div class="card-details">
+            <span class="fabric-tag">Viscose Blend</span>
+            <h3>Eucalyptus Fluid Blouse</h3>
+            <span class="price">$60.00</span>
+            <button type="button" class="btn-card">Add to Cart</button>
+          </div>
+        </article>
+
+        <!-- Product 10 -->
+        <article class="card">
+          <figure class="card-media">
+            <img src="assets/images/product-10.jpg" alt="Mint sage wrap blouse with structured cream flare trousers">
+          </figure>
+          <div class="card-details">
+            <span class="fabric-tag">Matte Satin</span>
+            <h3>Mint Wrap Drape Blouse</h3>
+            <span class="price">$72.00</span>
+            <button type="button" class="btn-card">Add to Cart</button>
+          </div>
+        </article>
+
+        <!-- Product 11 -->
+        <article class="card">
+          <figure class="card-media">
+            <img src="assets/images/product-11.jpg" alt="White tailored shirt layered with corset knit vest and ivory trousers">
+          </figure>
+          <div class="card-details">
+            <span class="fabric-tag">Corset Poplin</span>
+            <h3>Corset Knit Studio Ensemble</h3>
+            <span class="price">$95.00</span>
+            <button type="button" class="btn-card">Add to Cart</button>
+          </div>
+        </article>
+
+        <!-- Product 12 -->
+        <article class="card">
+          <figure class="card-media">
+            <img src="assets/images/product-12.jpg" alt="Minimalist short sleeve cream knit with high-waist pleated trousers">
+          </figure>
+          <div class="card-details">
+            <span class="fabric-tag">Breathable Knit</span>
+            <h3>Minimalist Ivory Set</h3>
+            <span class="price">$68.00</span>
+            <button type="button" class="btn-card">Add to Cart</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 5. Interactive Sizing & Fit Section (HTML Table Requirement) -->
+    <section id="sizing" class="container">
+      <div class="section-head">
+        <span class="badge">Measurements</span>
+        <h2>Garment Sizing & Fit Guide</h2>
+        <p class="section-desc">Refer to our standard measurements in inches for precision tailoring.</p>
+      </div>
+
+      <div class="table-card">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Size Label</th>
+              <th scope="col">Bust (in)</th>
+              <th scope="col">Waist (in)</th>
+              <th scope="col">Hips (in)</th>
+              <th scope="col">Silhouette</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">XS (0-2)</th>
+              <td>32" - 33"</td>
+              <td>24" - 25"</td>
+              <td>34" - 35"</td>
+              <td>Structured Fitted</td>
+            </tr>
+            <tr>
+              <th scope="row">S (4-6)</th>
+              <td>34" - 35"</td>
+              <td>26" - 27"</td>
+              <td>36" - 37"</td>
+              <td>True to Size</td>
+            </tr>
+            <tr>
+              <th scope="row">M (8-10)</th>
+              <td>36" - 37"</td>
+              <td>28" - 29"</td>
+              <td>38" - 39"</td>
+              <td>Relaxed Fluid Drape</td>
+            </tr>
+            <tr>
+              <th scope="row">L (12-14)</th>
+              <td>38" - 40"</td>
+              <td>30" - 32"</td>
+              <td>40" - 42"</td>
+              <td>Tailored Oversized</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 6. Atelier Ethos Section (Blockquote & Aside Requirement) -->
+    <section id="ethos" class="container about-grid">
+      <div class="about-text">
+        <span class="badge">Our Philosophy</span>
+        <h2>Architectural Simplicity</h2>
+        <p>At XIV COLLECTIONS, we design garments that resist the cycle of fast trends. We partner exclusively with certified organic textile mills in Portugal and Italy to produce pieces built for everyday longevity.</p>
+        <blockquote>
+          "Simplicity is not the absence of clutter, but the deliberate focus on proportion, texture, and lasting form."
+        </blockquote>
+      </div>
+
+      <aside class="guarantee-box">
+        <h3>The XIV Promise</h3>
+        <ul>
+          <li><strong>Zero Waste:</strong> Batch production avoiding oversupply.</li>
+          <li><strong>Organic Mills:</strong> 100% traceably sourced cotton and silk.</li>
+          <li><strong>Complimentary Care:</strong> Lifetime button and seam repair on all trousers.</li>
+        </ul>
+      </aside>
+    </section>
+
+    <!-- 7. VIP Newsletter & Style Concierge (Semantic Form Validation) -->
+    <section id="newsletter" class="container newsletter-box">
+      <div class="section-head">
+        <span class="badge">Stay Connected</span>
+        <h2>Join the XIV Atelier Circle</h2>
+        <p class="section-desc">Receive private lookbook releases, bespoke concierge invites, and early drop access.</p>
+      </div>
+
+      <form action="#" method="post" class="subscriber-form">
+        <div class="form-row">
+          <div class="input-wrap">
+            <label for="subscriber-name">Your Full Name</label>
+            <input type="text" id="subscriber-name" name="name" placeholder="Eleanor Vance" required>
+          </div>
+
+          <div class="input-wrap">
+            <label for="subscriber-email">Your Email Address</label>
+            <input type="email" id="subscriber-email" name="email" placeholder="eleanor@example.com" required>
+          </div>
+        </div>
+
+        <div class="input-wrap">
+          <label for="preferred-style">Style Preference</label>
+          <select id="preferred-style" name="style-preference" required>
+            <option value="">Select your preferred fit...</option>
+            <option value="tailored">Structured Tailoring</option>
+            <option value="fluid">Fluid Silks & Relaxed Trousers</option>
+            <option value="capsule">Complete Capsule Sets</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary submit-btn">Join Private List</button>
       </form>
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2026 AURELIA Atelier. All rights reserved.</p>
-    <ul>
-      <li><a href="#">Privacy Policy</a></li>
-      <li><a href="#">Terms of Service</a></li>
-      <li><a href="#">Shipping & Returns</a></li>
-    </ul>
+  <!-- 8. Footer -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <strong class="footer-logo">XIV COLLECTIONS</strong>
+        <p>Contemporary womenswear crafted with architectural precision and natural textiles.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#new-drop">New Drops</a></li>
+          <li><a href="#catalog">12-Piece Capsule</a></li>
+          <li><a href="#sizing">Size Chart</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Client Services</h4>
+        <ul>
+          <li><a href="#newsletter">Concierge Fitting</a></li>
+          <li><a href="#sizing">Garment Care</a></li>
+          <li><a href="#">Shipping & Returns</a></li>
+          <li><a href="#">Sustainability Report</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 XIV COLLECTIONS Atelier Inc. All rights reserved.</p>
+    </div>
   </footer>
 
 </body>
